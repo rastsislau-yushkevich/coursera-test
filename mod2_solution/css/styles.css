@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+}
+body {
+    width: 100%;
+}
+.container-row {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.item {
+    width: 30%;
+    border: 1px solid #000;
+    float: left;
+    position: relative;
+    background-color: grey;
+    margin: 0 1%;
+    padding-top: 2%;
+}
+
+.title-region {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 20%;
+    background-color: red;
+    text-align: center;
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .item {
+        width: 48%;
+    }
+
+    .item:nth-child(3n) {
+        width: 98%;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 767px) {
+    .item {
+        clear: left;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
